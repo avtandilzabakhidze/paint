@@ -162,7 +162,84 @@ footer {
   margin: 127px 136px; 
 }
 
-.slider{
+/* Text block */
+.text-block {
   width: 100%;
-  height: 701px;
+  margin: 80px auto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
 }
+
+/* Exhibitions + Video Row */
+.exhibition-video {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 102px;
+}
+
+.exhibition-list {
+ font-size: 32px;
+ max-width: 690px;
+}
+
+.exhibition-list h3 {
+  color: red;
+  margin: 0 0 20px 0;
+  padding: 0;        
+}
+
+
+.video-box {
+  width: 539px;
+  height: 957px;
+  background: black;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+   /* SLIDER - FIXED */
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 709px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: black;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%; /* 3 images × 100% each */
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 33.333%; /* Each image takes 1/3 of the slides container */
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0; /* Prevent images from shrinking */
+    }
+
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      font-size: 32px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+.prev { left: 10px; }
+.next { right: 10px; }
