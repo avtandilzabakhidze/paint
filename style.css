@@ -65,6 +65,7 @@ nav a {
   position: absolute;
   bottom: -144px; 
   font-size: 128px;
+    font-family: "Inria Serif";
 }
 
 /* ABOUT SECTION */
@@ -367,4 +368,32 @@ footer {
   align-items: center;
   margin-left: 19px;
   margin-right: 19px;
+}
+
+
+@media (max-width: 1600px) {
+  header {
+    padding: 0 5%;
+  }
+  nav {
+    gap: 60px;
+  }
+  .about {
+    padding: 150px 5%;
+  }
+  .about-left img {
+    max-width: 500px;
+    height: auto;
+  }
+  .about-right {
+    max-width: 600px; 
+    margin-left: 40px; 
+  }
+  .about-right .name {
+    font-size: clamp(3rem, 6vw, 5rem);
+  }
+  .about-right p {
+    font-size: clamp(1rem, 1.5vw, 1.25rem); 
+    line-height: 1.6;
+  }
 }
