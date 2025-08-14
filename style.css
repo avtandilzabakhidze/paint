@@ -263,13 +263,14 @@ footer {
 
 .artworks-section .description {
   max-width: 900px;
-  font-size: 32px;
+  font-size: 32px !important;
   font-weight: 400;
   color: #333;
 }
 
 .desc{
   margin-bottom: 90px;
+    font-size: 32px !important;
 }
 
 .artworks-grid {
@@ -309,6 +310,7 @@ footer {
   align-items: center;
   width: 100%;
   padding: 10px 20px; /* optional padding */
+  margin-top: 109px;
   box-sizing: border-box;
 }
 
@@ -317,16 +319,6 @@ footer {
   justify-content: center;
   gap: 10px; /* space between buttons */
   flex: 1; /* take available space for centering */
-}
-
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  width: 100%;
-  padding: 10px 20px;
-  box-sizing: border-box;
 }
 
 .center {
@@ -356,6 +348,7 @@ footer {
 }
 
 .right-btn{
+  margin-right: 0;
   font-size: 24px;
   display: flex;
   align-items: center;
