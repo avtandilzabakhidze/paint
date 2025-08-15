@@ -29,7 +29,7 @@ main {
 
 /* HEADER */
 header {
-  padding:0 136px;
+  padding: 0 136px;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -56,23 +56,23 @@ nav a {
   color: black;
 }
 
-.active{
+.active {
   color: red;
   font-weight: 700;
 }
 
 .header-title {
   position: absolute;
-  bottom: -144px; 
+  bottom: -144px;
   font-size: 128px;
-    font-family: "Inria Serif";
+  font-family: "Inria Serif";
 }
 
 /* ABOUT SECTION */
 .about {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 178px 136px;
   background: white;
 }
@@ -93,8 +93,8 @@ nav a {
   color: red;
   margin-top: 0;
   line-height: 1;
-  display: block;  
- top: -5px;
+  display: block;
+  top: -5px;
 }
 
 .about-right p {
@@ -110,7 +110,7 @@ nav a {
 }
 
 footer {
-  margin-top:127px;
+  margin-top: 127px;
   margin-left: 180px;
   margin-right: 180px;
 }
@@ -146,7 +146,7 @@ footer {
 /* Center middle column exactly */
 .footer-contact {
   text-align: center;
-  flex: 1; 
+  flex: 1;
 }
 
 /* Left column sticks left, right column sticks right */
@@ -159,8 +159,9 @@ footer {
   text-align: right;
 }
 
-.exhibitions, .artwork{
-  margin: 127px 136px; 
+.exhibitions,
+.artwork {
+  margin: 127px 136px;
 }
 
 /* Text block */
@@ -181,14 +182,14 @@ footer {
 }
 
 .exhibition-list {
- font-size: 32px;
- max-width: 690px;
+  font-size: 32px;
+  max-width: 690px;
 }
 
 .exhibition-list h3 {
   color: red;
   margin: 0 0 20px 0;
-  padding: 0;        
+  padding: 0;
 }
 
 
@@ -204,46 +205,51 @@ footer {
   object-fit: cover;
 }
 
-   /* SLIDER - FIXED */
-    .slider {
-      position: relative;
-      width: 100%;
-      height: 709px;
-      margin: 0 auto;
-      overflow: hidden;
-      background: black;
-    }
+/* SLIDER - FIXED */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 709px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: black;
+}
 
-    .slides {
-      display: flex;
-      width: 300%; 
-      height: 100%;
-      transition: transform 0.5s ease-in-out;
-    }
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
 
-    .slides img {
-      width: 33.333%;
-      height: 100%;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
+.slides img {
+  width: 33.333%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
 
-    .prev,
-    .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      font-size: 32px;
-      padding: 10px;
-      cursor: pointer;
-      z-index: 10;
-    }
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 32px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
 
 
 .artworks-section {
@@ -269,9 +275,9 @@ footer {
   color: #333;
 }
 
-.desc{
+.desc {
   margin-bottom: 90px;
-    font-size: 32px !important;
+  font-size: 32px !important;
 }
 
 .artworks-grid {
@@ -279,7 +285,7 @@ footer {
   grid-template-columns: repeat(3, 425px);
   justify-content: space-between;
   margin: 0 auto;
-  row-gap: 94px; 
+  row-gap: 94px;
 }
 
 
@@ -287,14 +293,16 @@ footer {
   width: 425px;
   text-align: center;
   font-size: 24px;
-   justify-content: start;
+  justify-content: start;
 }
 
 .artwork-image {
   width: 100%;
-  height: 425px;
+  aspect-ratio: 1 / 1;
   background-color: black;
+  object-fit: cover;
 }
+
 
 .artwork-title {
   font-weight: 400;
@@ -327,7 +335,7 @@ footer {
   gap: 10px;
 }
 
-.prev-btn{
+.prev-btn {
   background-color: black;
   color: white;
   border: none;
@@ -336,7 +344,7 @@ footer {
   height: 43px;
 }
 
-.next-btn{
+.next-btn {
   background-color: #f0f0f0;
   color: black;
   border: 1px solid #5B5B5B;
@@ -348,7 +356,7 @@ footer {
   font-family: "Inria Sans";
 }
 
-.right-btn{
+.right-btn {
   margin-right: 0;
   font-size: 24px;
   display: flex;
@@ -364,7 +372,7 @@ footer {
   width: 106px;
   height: 33px;
   line-height: 43px;
- justify-content: center;
+  justify-content: center;
   align-items: center;
   margin-left: 19px;
   margin-right: 19px;
@@ -373,27 +381,55 @@ footer {
 
 @media (max-width: 1600px) {
   header {
-    padding: 0 5%;
+    padding: 0 7% !important;
   }
+
   nav {
     gap: 60px;
   }
-  .about {
-    padding: 150px 5%;
+
+  .about{
+    padding: 150px 7%;
   }
+
   .about-left img {
-    max-width: 500px;
-    height: auto;
+    width: clamp(300px, 35vw, 585px);
+    height: clamp(300px, 35vw, 585px);
+    object-fit: cover;
   }
+
+
   .about-right {
-    max-width: 600px; 
-    margin-left: 40px; 
+    max-width: 600px;
+    margin-left: 40px;
   }
+
   .about-right .name {
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: clamp(3rem, 6vw, 4.5rem);
   }
+
   .about-right p {
-    font-size: clamp(1rem, 1.5vw, 1.25rem); 
-    line-height: 1.6;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+  }
+
+  .artworks-grid {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    column-gap: 50px;
+  }
+
+  .artwork-card {
+    width: 100%;
+  }
+
+  .description{
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+  }
+
+  .artwork-title{
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+  }
+
+  .next-btn{
+      font-size: clamp(0.5rem, 1.5vw, 1.25rem);
   }
 }
