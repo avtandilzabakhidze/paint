@@ -51,71 +51,8 @@
         </div>
 
         <div class="artworks-grid">
-           <div class="artwork-card">
-            <img src="./img/about_img.webp" class="artwork-image" alt="">
-            <p class="artwork-title">
-              Rubén Bachs, "The Hound" <br>
-              Rubén Bachs, "The Hound" <br>
-              1234$
-            </p>
-          </div>
-
-                <div class="artwork-card">
-            <img src="./img/about_img.webp" class="artwork-image" alt="">
-            <p class="artwork-title">
-              Rubén Bachs, "The Hound" <br>
-              Rubén Bachs, "The Hound" <br>
-              1234$
-            </p>
-          </div>
-
-      <div class="artwork-card">
-            <img src="./img/about_img.webp" class="artwork-image" alt="">
-            <p class="artwork-title">
-              Rubén Bachs, "The Hound" <br>
-              Rubén Bachs, "The Hound" <br>
-              1234$
-            </p>
-          </div>
-
-      <div class="artwork-card">
-            <img src="./img/about_img.webp" class="artwork-image" alt="">
-            <p class="artwork-title">
-              Rubén Bachs, "The Hound" <br>
-              Rubén Bachs, "The Hound" <br>
-              1234$
-            </p>
-          </div>
-
-      <div class="artwork-card">
-            <img src="./img/about_img.webp" class="artwork-image" alt="">
-            <p class="artwork-title">
-              Rubén Bachs, "The Hound" <br>
-              Rubén Bachs, "The Hound" <br>
-              1234$
-            </p>
-          </div>
-
-                <div class="artwork-card">
-            <img src="./img/about_img.webp" class="artwork-image" alt="">
-            <p class="artwork-title">
-              Rubén Bachs, "The Hound" <br>
-              Rubén Bachs, "The Hound" <br>
-              1234$
-            </p>
-          </div>
-
-                <div class="artwork-card">
-            <img src="./img/about_img.webp" class="artwork-image" alt="">
-            <p class="artwork-title">
-              Rubén Bachs, "The Hound" <br>
-              Rubén Bachs, "The Hound" <br>
-              1234$
-            </p>
-          </div>
-
-                <div class="artwork-card">
-            <img src="./img/about_img.webp" class="artwork-image" alt="">
+          <div class="artwork-card">
+            <img src="./img/imges/1-01.png" class="artwork-image" alt="">
             <p class="artwork-title">
               Rubén Bachs, "The Hound" <br>
               Rubén Bachs, "The Hound" <br>
@@ -124,7 +61,70 @@
           </div>
 
           <div class="artwork-card">
-            <img src="./img/about_img.webp" class="artwork-image" alt="">
+            <img src="./img/imges/1-02.png" class="artwork-image" alt="">
+            <p class="artwork-title">
+              Rubén Bachs, "The Hound" <br>
+              Rubén Bachs, "The Hound" <br>
+              1234$
+            </p>
+          </div>
+
+          <div class="artwork-card">
+            <img src="./img/imges/1-03.png" class="artwork-image" alt="">
+            <p class="artwork-title">
+              Rubén Bachs, "The Hound" <br>
+              Rubén Bachs, "The Hound" <br>
+              1234$
+            </p>
+          </div>
+
+          <div class="artwork-card">
+            <img src="./img/imges/1-04.png" class="artwork-image" alt="">
+            <p class="artwork-title">
+              Rubén Bachs, "The Hound" <br>
+              Rubén Bachs, "The Hound" <br>
+              1234$
+            </p>
+          </div>
+
+          <div class="artwork-card">
+            <img src="./img/imges/1-05.png" class="artwork-image" alt="">
+            <p class="artwork-title">
+              Rubén Bachs, "The Hound" <br>
+              Rubén Bachs, "The Hound" <br>
+              1234$
+            </p>
+          </div>
+
+          <div class="artwork-card">
+            <img src="./img/imges/1-06.png" class="artwork-image" alt="">
+            <p class="artwork-title">
+              Rubén Bachs, "The Hound" <br>
+              Rubén Bachs, "The Hound" <br>
+              1234$
+            </p>
+          </div>
+
+          <div class="artwork-card">
+            <img src="./img/imges/1-07.png" class="artwork-image" alt="">
+            <p class="artwork-title">
+              Rubén Bachs, "The Hound" <br>
+              Rubén Bachs, "The Hound" <br>
+              1234$
+            </p>
+          </div>
+
+          <div class="artwork-card">
+            <img src="./img/imges/1-08.png" class="artwork-image" alt="">
+            <p class="artwork-title">
+              Rubén Bachs, "The Hound" <br>
+              Rubén Bachs, "The Hound" <br>
+              1234$
+            </p>
+          </div>
+
+          <div class="artwork-card">
+            <img src="./img/Untitled-1-01.png" class="artwork-image" alt="">
             <p class="artwork-title">
               Rubén Bachs, "The Hound" <br>
               Rubén Bachs, "The Hound" <br>
@@ -137,7 +137,6 @@
           <div class="left"></div>
 
           <div class="center">
-            <button class="prev-btn">←</button>
             <button class="next-btn">Next Page →</button>
           </div>
 
@@ -146,7 +145,7 @@
           </div>
         </div>
     </section>
-</div>
+  </div>
 
   <div class="footer-wrapper">
     <footer>
@@ -166,6 +165,11 @@
       </div>
     </footer>
   </div>
+  <!-- Modal for artwork images -->
+  <div class="modal" id="imageModal">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" alt="">
+  </div>
 
   <script>
     let currentSlide = 0;
@@ -182,6 +186,56 @@
     }
 
     setInterval(() => changeSlide(1), 5000);
+
+    // Get elements
+    const images = document.querySelectorAll(".artwork-image");
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeModal = document.getElementById("closeModal");
+
+    // Open modal when any artwork image is clicked
+    images.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+      });
+    });
+
+    // Close modal when X is clicked
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // Close modal if background is clicked
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    // Open modal when any artwork image is clicked
+    images.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        document.body.style.overflow = "hidden"; // 🔒 Disable scroll
+      });
+    });
+
+    // Close modal when X is clicked
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+      document.body.style.overflow = ""; // 🔓 Enable scroll back
+    });
+
+    // Close modal if background is clicked
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = ""; // 🔓 Enable scroll back
+      }
+    });
+
   </script>
 </body>
 

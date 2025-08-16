@@ -283,7 +283,6 @@ footer {
 .artwork-image {
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-color: black;
   object-fit: cover;
 }
 
@@ -472,4 +471,39 @@ footer {
   .about-right .name {
     font-size: clamp(1.5rem, 6vw, 40px);
   }
+}
+
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Enlarged image */
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+.close-btn:hover {
+  color: red;
 }
