@@ -371,17 +371,17 @@ footer {
   }
 
   .about-left img {
-    width: clamp(300px, 35vw, 585px);
-    height: clamp(300px, 35vw, 585px);
+    width: clamp(200px, 35vw, 585px);
+    height: clamp(200px, 35vw, 585px);
     object-fit: cover;
   }
 
   .about-right {
-    max-width: 600px;
+    max-width: 500px;
   }
 
   .about-right .name {
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(1.5rem, 6vw, 3.5rem);
   }
 
   .about-right p {
@@ -458,5 +458,17 @@ footer {
     width: clamp(60px, 8vw, 106px);
     height: clamp(25px, 3vw, 33px);
     font-size: clamp(0.7rem, 1.2vw, 1rem);
+  }
+}
+
+@media (max-width: 1044px) {
+  /* .about-left img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  } */
+
+  .about-right .name {
+    font-size: clamp(1.5rem, 6vw, 40px);
   }
 }
