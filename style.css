@@ -427,7 +427,8 @@ footer {
   }
 
   .video-box {
-    width: clamp(350px, 40vw, 530px);
+    width: clamp(350px, 40vw, 500px);
+    margin-left: 100px;
     height: auto; 
   }
 
