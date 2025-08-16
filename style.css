@@ -173,7 +173,6 @@ footer {
   line-height: 1.5;
 }
 
-/* Exhibitions + Video Row */
 .exhibition-video {
   display: flex;
   justify-content: space-between;
@@ -196,7 +195,6 @@ footer {
 .video-box {
   width: 539px;
   height: 957px;
-  background: black;
 }
 
 .video-box video {
@@ -380,10 +378,6 @@ footer {
 
 
 @media (max-width: 1600px) {
-  header {
-    /* padding: 0 8% !important; */
-  }
-
   nav {
     gap: 60px;
   }
@@ -397,7 +391,6 @@ footer {
     height: clamp(300px, 35vw, 585px);
     object-fit: cover;
   }
-
 
   .about-right {
     max-width: 600px;
@@ -431,17 +424,11 @@ footer {
   .next-btn {
     font-size: clamp(0.5rem, 1.5vw, 1.25rem);
   }
-
-  .exhibitions {
-    margin: 80px 5%;
-  }
-
-  /* Slider height adjustment */
+  
   .slider {
     height: auto;
   }
 
-  /* Text block smaller & more compact */
   .text-block {
     font-size: clamp(1rem, 1.5vw, 1.25rem);
     margin: 40px auto;
@@ -455,10 +442,9 @@ footer {
     font-size: clamp(1rem, 1.5vw, 1.25rem);
   }
 
-    /* Video responsive */
   .video-box {
-    width: clamp(350px, 40vw, 539px);
-    height: auto; /* keeps ratio */
+    width: clamp(350px, 40vw, 530px);
+    height: auto; 
   }
 
   .video-box video {
@@ -467,5 +453,26 @@ footer {
     aspect-ratio: 9 / 16; /* keeps portrait shape */
     object-fit: cover;
   }
-  
+
+  .prev-btn {
+    width: clamp(30px, 3vw, 43px);
+    height: clamp(30px, 3vw, 43px);
+    font-size: clamp(0.7rem, 1.2vw, 1rem);
+  }
+
+  .next-btn {
+    width: clamp(100px, 10vw, 159px);
+    height: clamp(35px, 3vw, 43px);
+    font-size: clamp(0.7rem, 1.5vw, 1.25rem);
+  }
+
+  .right-btn {
+    font-size: clamp(0.7rem, 1.5vw, 1.25rem);
+  }
+
+  .num {
+    width: clamp(60px, 8vw, 106px);
+    height: clamp(25px, 3vw, 33px);
+    font-size: clamp(0.7rem, 1.2vw, 1rem);
+  }
 }
