@@ -381,7 +381,7 @@ footer {
 
 @media (max-width: 1600px) {
   header {
-    padding: 0 7% !important;
+    /* padding: 0 8% !important; */
   }
 
   nav {
@@ -389,7 +389,7 @@ footer {
   }
 
   .about{
-    padding: 150px 7%;
+    padding: 150px 136px;
   }
 
   .about-left img {
@@ -401,11 +401,10 @@ footer {
 
   .about-right {
     max-width: 600px;
-    margin-left: 40px;
   }
 
   .about-right .name {
-    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-size: clamp(2rem, 6vw, 3.5rem);
   }
 
   .about-right p {
@@ -431,5 +430,44 @@ footer {
 
   .next-btn{
       font-size: clamp(0.5rem, 1.5vw, 1.25rem);
+  }
+
+    .exhibitions {
+    margin: 80px 5%;
+  }
+
+  /* Slider height adjustment */
+  .slider {
+    height: 400px;
+  }
+
+  /* Text block smaller & more compact */
+  .text-block {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    margin: 40px auto;
+    max-width: 90%;
+  }
+
+  /* Stack exhibition list and video */
+  .exhibition-video {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    gap: 40px;
+  }
+
+  .exhibition-list {
+    max-width: 90%;
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+  }
+
+  .video-box {
+    width: 90%;
+    height: auto;
+  }
+
+  .video-box video {
+    height: auto;
   }
 }
