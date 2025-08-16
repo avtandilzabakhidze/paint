@@ -388,7 +388,7 @@ footer {
     gap: 60px;
   }
 
-  .about{
+  .about {
     padding: 150px 136px;
   }
 
@@ -420,54 +420,52 @@ footer {
     width: 100%;
   }
 
-  .description{
-        font-size: clamp(1rem, 1.5vw, 1.25rem);
+  .description {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
   }
 
-  .artwork-title{
-      font-size: clamp(1rem, 1.5vw, 1.25rem);
+  .artwork-title {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
   }
 
-  .next-btn{
-      font-size: clamp(0.5rem, 1.5vw, 1.25rem);
+  .next-btn {
+    font-size: clamp(0.5rem, 1.5vw, 1.25rem);
   }
 
-    .exhibitions {
+  .exhibitions {
     margin: 80px 5%;
   }
 
   /* Slider height adjustment */
   .slider {
-    height: 400px;
+    height: auto;
   }
 
   /* Text block smaller & more compact */
   .text-block {
     font-size: clamp(1rem, 1.5vw, 1.25rem);
     margin: 40px auto;
-    max-width: 90%;
-  }
-
-  /* Stack exhibition list and video */
-  .exhibition-video {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-    gap: 40px;
   }
 
   .exhibition-list {
-    max-width: 90%;
-    text-align: center;
     font-size: clamp(1rem, 1.5vw, 1.25rem);
   }
 
+  .exhibition-list h3 {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+  }
+
+    /* Video responsive */
   .video-box {
-    width: 90%;
-    height: auto;
+    width: clamp(350px, 40vw, 539px);
+    height: auto; /* keeps ratio */
   }
 
   .video-box video {
+    width: 100%;
     height: auto;
+    aspect-ratio: 9 / 16; /* keeps portrait shape */
+    object-fit: cover;
   }
+  
 }
