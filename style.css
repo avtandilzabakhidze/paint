@@ -143,13 +143,11 @@ footer {
   text-align: left;
 }
 
-/* Center middle column exactly */
 .footer-contact {
   text-align: center;
   flex: 1;
 }
 
-/* Left column sticks left, right column sticks right */
 .footer-info {
   flex: 0 0 auto;
 }
@@ -446,7 +444,7 @@ footer {
   .video-box video {
     width: 100%;
     height: auto;
-    aspect-ratio: 9 / 16; /* keeps portrait shape */
+    aspect-ratio: 9 / 16;
     object-fit: cover;
   }
 
