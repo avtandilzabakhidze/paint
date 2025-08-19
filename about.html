@@ -31,7 +31,7 @@
       <!-- Hamburger (only visible on mobile) -->
       <div class="hamburger" style="display: none;">&#9776;</div>
 
-      <!-- Mobile menu overlay --> 
+      <!-- Mobile menu overlay -->
       <div class="mobile-menu" id="mob" style="display: none;">
         <div class="mobile-header">
           <img src="./img/header_logo.png" alt="Davit Abram Logo" style="height:40px;">
@@ -41,6 +41,7 @@
         <a href="./about.html">About</a>
         <a href="./exhibition.html">Exhibitions</a>
       </div>
+      <h1 class="header-title">About</h1>
     </header>
   </div>
 
@@ -80,21 +81,21 @@
     </footer>
   </div>
 
-<script>
-  const hamburger = document.querySelector('.hamburger');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  const closeBtn = document.querySelector('.close-btn');
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeBtn = document.querySelector('.close-btn');
 
-  hamburger.addEventListener('click', () => {
-    mobileMenu.classList.add('active');
-    document.body.classList.add('no-scroll'); // disable scroll
-  });
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+      document.body.classList.add('no-scroll');
+    });
 
-  closeBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('active');
-    document.body.classList.remove('no-scroll'); // enable scroll
-  });
-</script>
+    closeBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+    });
+  </script>
 
 </body>
 
