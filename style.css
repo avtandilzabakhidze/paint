@@ -355,9 +355,42 @@ footer {
   height: 33px;
   line-height: 43px;
   justify-content: center;
-  align-items: center;
+  align-items: center;                                      
   margin-left: 19px;
   margin-right: 19px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  color: red;
 }
 
 @media (max-width: 1600px) {
@@ -462,48 +495,69 @@ footer {
 }
 
 @media (max-width: 1044px) {
-  /* .about-left img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  } */
-
   .about-right .name {
     font-size: clamp(1.5rem, 6vw, 40px);
   }
 }
 
-/* Modal background */
-.modal {
-  display: none;
+/* Hide desktop nav, show hamburger on mobile */
+@media (max-width: 768px) {
+/* Force only mobile version everywhere */
+nav {
+  display: none !important;
+}
+
+.hamburger {
+  display: block !important;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.mobile-menu {
+  display: none !important;
   position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(6px);
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: #DBE0CA;
+  z-index: 999;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2000;
 }
 
-/* Enlarged image */
-.modal-content {
-  max-width: 90%;
-  max-height: 90%;
-  object-fit: contain;
+.mobile-menu.active {
+  display: flex !important;
 }
 
-/* Close button */
-.close-btn {
+.mobile-menu a {
+  font-size: 28px;
+  margin: 20px 0;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-header {
   position: absolute;
   top: 20px;
-  right: 30px;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-  user-select: none;
-  transition: 0.2s;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  align-items: center;
 }
-.close-btn:hover {
-  color: red;
+
+.close-btn {
+  font-size: 32px;
+  cursor: pointer;
+  color: #707070;
+  margin-top: -16px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
 }

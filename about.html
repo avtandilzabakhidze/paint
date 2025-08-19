@@ -1,64 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Davit Abramashvili</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davit Abramashvili</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-<!-- HEADER -->
- <div class="container-header">
-<header>
-  <div class="logo">
-    <img src="./img/header_logo.png" alt="Davit Abram Logo">
-  </div>
-  <nav>
-    <a href="./index.html" >Artworks </a>
-    <a href="./about.html" class="active">About</a>
-    <a href="./exhibition.html">Exhibitions</a>
-  </nav>
-  <h1 class="header-title">About</h1>
-</header>
-</div>
+  <!-- HEADER -->
+  <div class="container-header">
+    <header>
+      <div class="logo">
+        <img src="./img/header_logo.png" alt="Davit Abram Logo">
+      </div>
 
-<!-- ABOUT SECTION -->
+      <!-- Desktop nav -->
+      <nav>
+        <a href="./index.html">Artworks</a>
+        <a href="./about.html" class="active">About</a>
+        <a href="./exhibition.html">Exhibitions</a>
+      </nav>
+
+      <!-- Hamburger (only visible on mobile) -->
+      <div class="hamburger" style="display: none;">&#9776;</div>
+
+      <!-- Mobile menu overlay --> 
+      <div class="mobile-menu" id="mob" style="display: none;">
+        <div class="mobile-header">
+          <img src="./img/header_logo.png" alt="Davit Abram Logo" style="height:40px;">
+          <span class="close-btn">&times;</span>
+        </div>
+        <a href="./index.html">Artworks</a>
+        <a href="./about.html">About</a>
+        <a href="./exhibition.html">Exhibitions</a>
+      </div>
+    </header>
+  </div>
+
+  <!-- ABOUT SECTION -->
   <div class="container">
-<section class="about">
-  <div class="about-left">
-    <img src="./img/79223647-33d8-4393-afb4-0fb7cf669834.jpg" alt="Davit Abramashvili">
-  </div>
-    <div class="about-middle">
+    <section class="about">
+      <div class="about-left">
+        <img src="./img/79223647-33d8-4393-afb4-0fb7cf669834.jpg" alt="Davit Abramashvili">
+      </div>
+      <div class="about-middle">
 
-    </div>
-  <div class="about-right">
-    <h2 class="name">DAVIT<br>ABRAMASHVILI</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat...</p>
+      </div>
+      <div class="about-right">
+        <h2 class="name">DAVIT<br>ABRAMASHVILI</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat...</p>
+      </div>
+    </section>
   </div>
-</section>
-</div>
 
-<div class="footer-wrapper">
-  <footer>
-    <div class="footer-top">
-      <img src="./img/footer-logo.png" alt="Davit Abram Logo" class="footer-logo">
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-info">
-        <p>Contemporary Artist<br>Painter<br>Visual Storyteller</p>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-top">
+        <img src="./img/footer-logo.png" alt="Davit Abram Logo" class="footer-logo">
       </div>
-      <div class="footer-contact">
-        <p>E: davitmoreart@gmail.com<br>T: +995 597 009 391</p>
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <p>Contemporary Artist<br>Painter<br>Visual Storyteller</p>
+        </div>
+        <div class="footer-contact">
+          <p>E: davitmoreart@gmail.com<br>T: +995 597 009 391</p>
+        </div>
+        <div class="footer-social">
+          <p>Instagram<br>LinkedIn<br>Behance</p>
+        </div>
       </div>
-      <div class="footer-social">
-        <p>Instagram<br>LinkedIn<br>Behance</p>
-      </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-btn');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.add('active');
+    document.body.classList.add('no-scroll'); // disable scroll
+  });
+
+  closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    document.body.classList.remove('no-scroll'); // enable scroll
+  });
+</script>
 
 </body>
+
 </html>
