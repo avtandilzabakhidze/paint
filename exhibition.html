@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +20,31 @@
       <div class="logo">
         <img src="./img/header_logo.png" alt="Davit Abram Logo">
       </div>
+
+      <!-- Desktop nav -->
       <nav>
         <a href="./index.html">Artworks</a>
         <a href="./about.html">About</a>
         <a href="./exhibition.html" class="active">Exhibitions</a>
       </nav>
+
+      <!-- Hamburger (only visible on mobile) -->
+      <div class="hamburger" style="display: none;">&#9776;</div>
+
+      <!-- Mobile menu overlay -->
+      <div class="mobile-menu" id="mob" style="display: none;">
+        <div class="mobile-header">
+          <img src="./img/header_logo.png" alt="Davit Abram Logo" style="height:40px;">
+          <span class="close-btn">&times;</span>
+        </div>
+        <a href="./index.html">Artworks</a>
+        <a href="./about.html">About</a>
+        <a href="./exhibition.html">Exhibitions</a>
+      </div>
       <h1 class="header-title">Exhibition</h1>
     </header>
   </div>
+
 
   <!-- EXHIBITIONS SECTION -->
   <div class="container">
@@ -49,7 +67,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
           dapibus diam.
           Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
           dapibus diam.
           Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
         </p>
@@ -101,7 +119,7 @@
   </div>
 
   <script>
-   let currentSlide = 0;
+    let currentSlide = 0;
     const slides = document.querySelectorAll('.slides img');
     const totalSlides = slides.length;
 
@@ -115,6 +133,21 @@
     }
 
     setInterval(() => changeSlide(1), 5000);
+
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+      document.body.classList.add('no-scroll');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+    });
   </script>
 </body>
+
 </html>
