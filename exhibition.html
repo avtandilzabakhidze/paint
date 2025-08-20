@@ -118,36 +118,6 @@
     </footer>
   </div>
 
-  <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slides img');
-    const totalSlides = slides.length;
-
-    function changeSlide(direction) {
-      currentSlide += direction;
-      if (currentSlide >= totalSlides) currentSlide = 0;
-      if (currentSlide < 0) currentSlide = totalSlides - 1;
-
-      document.querySelector('.slides').style.transform =
-        `translateX(-${currentSlide * (100 / totalSlides)}%)`;
-    }
-
-    setInterval(() => changeSlide(1), 5000);
-
-    const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const closeBtn = document.querySelector('.close-btn');
-
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.add('active');
-      document.body.classList.add('no-scroll');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      mobileMenu.classList.remove('active');
-      document.body.classList.remove('no-scroll');
-    });
-  </script>
+<script src="app.js"></script>
 </body>
-
 </html>
