@@ -392,6 +392,14 @@ footer {
   color: red;
 }
 
+.hamburger {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 1600px) {
   nav {
     gap: 60px;
@@ -499,7 +507,6 @@ footer {
   }
 }
 
-/* Hide desktop nav, show hamburger on mobile */
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -583,7 +590,6 @@ footer {
     height: 100%;
   }
 
-  /* Mobile Artworks Styles */
   .artwork {
     margin: 40px 30px;
     padding: 0;
@@ -663,7 +669,6 @@ footer {
     margin: 0 10px;
   }
 
-  /* Mobile Exhibition Styles */
   .exhibitions {
     margin: 40px 30px;
     padding: 0;
@@ -724,7 +729,6 @@ footer {
     padding: 8px 12px;
   }
 
-  /* Mobile Footer Styles */
   .footer-wrapper {
     height: auto;
     padding: 40px 30px;
@@ -758,7 +762,6 @@ footer {
     display: none;
   }
 
-  /* about page */
   .about {
     flex-direction: column;
     align-items: center;
@@ -786,13 +789,4 @@ footer {
     text-align: left;
     font-size: 18px;
   }
-}
-
-/* Hamburger initially hidden */
-.hamburger {
-  display: none;
-}
-
-.mobile-menu {
-  display: none;
 }
