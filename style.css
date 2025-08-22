@@ -422,6 +422,10 @@ footer {
   margin-top: 0;
 }
 
+.btn-a{
+  text-decoration: none;
+}
+
 @media (max-width: 1600px) {
   nav {
     gap: 60px;
