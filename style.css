@@ -405,6 +405,10 @@ footer {
  color: white;
 }
 
+.exh-title{
+  font-weight: bold;
+}
+
 @media (max-width: 1600px) {
   nav {
     gap: 60px;
