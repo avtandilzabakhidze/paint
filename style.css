@@ -400,7 +400,7 @@ footer {
   display: none;
 }
 
-.links a{
+.links a, .footer-contact a{
  text-decoration: none;
  color: white;
 }
