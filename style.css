@@ -422,7 +422,14 @@ footer {
   margin-top: 0;
 }
 
-.btn-a{
+.prev-btn,
+.next-btn {
+  cursor: pointer;
+  font-family: "Inria Sans" !important;
+  box-sizing: border-box;
+}
+
+.btn-a {
   text-decoration: none;
 }
 
