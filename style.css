@@ -202,13 +202,13 @@ footer {
 
 .slides {
   display: flex;
-  width: 300%;
+  width: 200%;
   height: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
 .slides img {
-  width: 33.333%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
@@ -262,7 +262,7 @@ footer {
 .desc {
   margin-bottom: 90px;
   font-size: 32px !important;
-    display: contents;
+  display: contents;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -404,14 +404,20 @@ footer {
   display: none;
 }
 
-.links a, .footer-contact a{
- text-decoration: none;
- color: white;
+.links a,
+.footer-contact a {
+  text-decoration: none;
+  color: white;
 }
 
-.exh-title{
+.exh-title {
   font-weight: bold;
 }
+
+  .description {
+    margin-bottom: 100px;
+  }
+
 
 @media (max-width: 1600px) {
   nav {
