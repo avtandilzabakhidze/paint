@@ -400,6 +400,11 @@ footer {
   display: none;
 }
 
+.links a{
+ text-decoration: none;
+ color: white;
+}
+
 @media (max-width: 1600px) {
   nav {
     gap: 60px;
