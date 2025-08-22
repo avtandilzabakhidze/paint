@@ -262,9 +262,10 @@ footer {
 .desc {
   margin-bottom: 90px;
   font-size: 32px !important;
-  display: contents;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+}
+
+.text-block {
   text-align: center;
 }
 
@@ -414,9 +415,9 @@ footer {
   font-weight: bold;
 }
 
-  .description {
-    margin-bottom: 100px;
-  }
+.description {
+  margin-bottom: 100px;
+}
 
 
 @media (max-width: 1600px) {
@@ -695,7 +696,7 @@ footer {
 
   .slider {
     margin-bottom: 30px;
-        height: auto;
+    height: auto;
   }
 
   .text-block {
