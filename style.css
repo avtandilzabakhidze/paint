@@ -384,15 +384,21 @@ footer {
 }
 
 .close-btn {
-  position: absolute;
-  top: 0;
-  right: 30px;
+  position: static;
+  margin-top: 0;
+  margin-right: 30px;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
   user-select: none;
   transition: 0.2s;
   color: #707070;
+  outline: none;  
+}
+
+.close-btn:focus {
+  outline: none;       
+  box-shadow: none;    
 }
 
 .close-btn:hover {
