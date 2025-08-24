@@ -386,7 +386,7 @@ footer {
 .close-btn {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 30px;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
