@@ -27,7 +27,7 @@ if (images.length > 0 && modal && modalImg && closeModal) {
     img.addEventListener("click", () => {
       modal.style.display = "flex";
       modalImg.src = img.src;
-      document.body.style.overflow = "hidden"; // disable scroll
+      document.body.style.overflow = "hidden";
     });
   });
 

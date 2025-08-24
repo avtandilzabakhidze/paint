@@ -396,11 +396,12 @@ footer {
   outline: none;  
 }
 
-.close-btn:focus {
-  outline: none;       
-  box-shadow: none;    
+.close-btn:focus,
+.close-btn:active,
+.close-btn:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
-
 .close-btn:hover {
   color: red;
 }
