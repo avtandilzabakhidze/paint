@@ -385,14 +385,14 @@ footer {
 
 .close-btn {
   position: absolute;
-  top: 20px;
+  top: 0;
   right: 30px;
   font-size: 40px;
   font-weight: bold;
-  color: white;
   cursor: pointer;
   user-select: none;
   transition: 0.2s;
+  color: #707070;
 }
 
 .close-btn:hover {
@@ -432,19 +432,6 @@ footer {
 .btn-a {
   text-decoration: none;
 }
-
-.hamburger,
-.close-btn {
-  outline: none;
-  border: none;
-}
-
-.hamburger:focus,
-.close-btn:focus {
-  outline: none;
-  box-shadow: none;
-}
-
 
 @media (max-width: 1600px) {
   nav {
@@ -629,12 +616,6 @@ footer {
     justify-content: space-between;
     width: calc(100% - 40px);
     align-items: center;
-  }
-
-  .close-btn {
-    font-size: 40px;
-    cursor: pointer;
-    color: #707070;
   }
 
   .no-scroll {
