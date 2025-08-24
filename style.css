@@ -433,6 +433,19 @@ footer {
   text-decoration: none;
 }
 
+.hamburger,
+.close-btn {
+  outline: none;
+  border: none;
+}
+
+.hamburger:focus,
+.close-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
 @media (max-width: 1600px) {
   nav {
     gap: 60px;
