@@ -393,7 +393,7 @@ footer {
   user-select: none;
   transition: 0.2s;
   color: #707070;
-  outline: none;  
+  outline: none;
 }
 
 .close-btn:focus,
@@ -402,6 +402,7 @@ footer {
   outline: none;
   box-shadow: none;
 }
+
 .close-btn:hover {
   color: red;
 }
