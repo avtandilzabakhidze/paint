@@ -452,6 +452,10 @@ footer {
   text-decoration: none;
 }
 
+.artwork-image:hover {
+  cursor: url('./img/magnifier.png') 64 64, zoom-in;
+}
+
 @media (max-width: 1600px) {
   nav {
     gap: 60px;
