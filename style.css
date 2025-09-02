@@ -387,9 +387,8 @@ footer {
 
 .close-btn {
   position: absolute;
-display: block;
   top: 0;
-  right: 30px;
+  right: 24px;
   font-size: 40px;
   font-weight: 400;
   cursor: pointer;
@@ -397,11 +396,17 @@ display: block;
   transition: 0.2s;
   color: #707070;
   outline: none;
+  border: none;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
 }
 
 .close-btn:focus,
 .close-btn:active,
 .close-btn:focus-visible {
+  -webkit-tap-highlight-color: transparent;
   outline: none;
   box-shadow: none;
 }
@@ -411,6 +416,9 @@ display: block;
 }
 
 .hamburger {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
   display: none;
 }
 
