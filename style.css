@@ -582,6 +582,17 @@ footer {
     margin: 0 !important;
   }
 
+  .hamburger {
+    font-size: 32px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .hamburger.open {
+    content: "×";
+    font-size: 40px;
+  }
+
   nav {
     display: none !important;
   }
