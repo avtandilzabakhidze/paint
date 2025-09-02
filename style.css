@@ -707,12 +707,16 @@ footer {
     width: 120px;
     height: 40px;
     font-size: 16px;
+    line-height: 40px;
+    box-sizing: border-box;
   }
 
   .prev-btn {
     width: 43px;
     height: 40px;
     font-size: 16px;
+    line-height: 40px;
+    box-sizing: border-box;
   }
 
   .num {
